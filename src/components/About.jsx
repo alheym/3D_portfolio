@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
