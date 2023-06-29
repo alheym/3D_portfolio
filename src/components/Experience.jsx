@@ -49,7 +49,7 @@ const ExperienceCard = ({ experience }) => {
 }
 
 ExperienceCard.propTypes = {
-  experience: PropTypes.string.isRequired
+  experience: PropTypes.object.isRequired
 }
 
 const Experience = () => {
