@@ -1,5 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
-import React from 'react'
+import PropTypes from 'prop-types';
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
@@ -7,7 +8,8 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-// eslint-disable-next-line react/prop-types
+import { SectionWrapper } from '../HOC'
+
 const ServiceCard = ({ title, index, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
@@ -28,6 +30,12 @@ const ServiceCard = ({ title, index, icon }) => {
     </Tilt>
 
   )
+}
+
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired
 }
 
 const About = () => {
@@ -53,4 +61,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, 'about')
