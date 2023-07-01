@@ -161,10 +161,8 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+            "Expedita quam eaque molestias error ipsum fugiat, natus vel maiores voluptas reiciendis culpa corrupti, molestiae animi quis illum, tenetur ex commodi distinctio.",
         ],
     },
 ];
