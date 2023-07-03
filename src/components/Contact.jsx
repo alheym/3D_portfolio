@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
@@ -19,10 +20,41 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
+    const { name, value } = e.target
+
+    setForm({ ...form, [name]: value })
+
 
   }
 
   const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(
+      'service_5svieup',
+      'template_enu8uu9',
+      {
+        from_name: form.name,
+        to_name: 'Alheym',
+        from_email: form.email,
+        to_email: 'alheym.mw@gmail.com',
+        message: form.message
+      },
+      'bIYG6WvDtkvI2VgHs'
+    ).then(() => {
+      setLoading(false)
+      alert('Thank you. I will get back to you as soon as possible.')
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false)
+      console.log(error)
+      alert('Somerhing went wrong.')
+    })
 
   }
 
@@ -36,7 +68,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
-          ref={form}
+          ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
