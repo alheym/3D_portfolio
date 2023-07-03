@@ -33,6 +33,20 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.pink-gradient {
+  background: #b66c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5a5d85,
+    #b66c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5a5d85,
+    #b66c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .violet-gradient {
   background: #fac8e5;
   background: linear-gradient(-90deg, #fac8e5 0%, rgba(60, 51, 80, 0) 100%);
@@ -43,10 +57,10 @@
   );
 }
 
-.green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+.blue-pink-gradient {
+  background: "#46d9fc";
+  background: linear-gradient(90.13deg, #46d9fc 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #46d9fc 1.9%, #bf61ff 97.5%);
 }
 
 .orange-text-gradient {

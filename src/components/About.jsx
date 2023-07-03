@@ -1,5 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
-import React from 'react'
+import PropTypes from 'prop-types'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
@@ -7,13 +8,14 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-// eslint-disable-next-line react/prop-types
+import { SectionWrapper } from '../HOC'
+
 const ServiceCard = ({ title, index, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+        className='w-full blue-pink-gradient p-[1px] rounded-[20px] shadow-card'>
         <div
           options={{
             max: 45,
@@ -30,6 +32,12 @@ const ServiceCard = ({ title, index, icon }) => {
   )
 }
 
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired
+}
+
 const About = () => {
   return (
     <>
@@ -40,8 +48,12 @@ const About = () => {
 
       <motion.p variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia veniam impedit quisquam accusantium, incidunt velit inventore magni aut adipisci, sint, similique corporis quidem sapiente deleniti autem accusamus facilis quibusdam.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, deserunt reiciendis? Laboriosam iure incidunt, eligendi voluptas optio corporis nesciunt eaque ipsum voluptates quos voluptate! Corrupti officia odit quam inventore quaerat!
+        I&apos;m a frontend developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Vue, and
+        Three.js. I&apos;m a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems.
+        <br />Let&apos;s work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -53,4 +65,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, 'about')
