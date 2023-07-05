@@ -18,9 +18,9 @@ import {
     tusur,
     udemy,
     practicum,
-    carrent,
-    jobit,
-    tripguide,
+    jungle,
+    messenger,
+    portfolio,
     threejs,
 } from "../assets";
 
@@ -119,7 +119,7 @@ const experiences = [
         company_name: "TUSUR",
         icon: tusur,
         iconBg: "#383E56",
-        date: "Sept 2015 - June 2019",
+        date: "Sept 2015 - Jun 2019",
         points: [
             "Faculty of Computer systems.",
             "Bachelor's program Informatics and Computer Engineering | Code: 09.03.01",
@@ -133,7 +133,7 @@ const experiences = [
         company_name: "TUSUR",
         icon: tusur,
         iconBg: "#E6DEDD",
-        date: "Sept 2019 - June 2021",
+        date: "Sept 2019 - Jun 2021",
         points: [
             "Faculty of Computer systems.",
             "Master's program Informatics and Computer Engineering | Code: 09.04.01",
@@ -161,7 +161,7 @@ const experiences = [
         company_name: "UDEMY",
         icon: udemy,
         iconBg: "#E6DEDD",
-        date: "Mar 2020 - June 2020",
+        date: "Mar 2020 - Jun 2020",
         points: [
             "Learning the basics of web development.",
             "Working with version control systems Git and GitHub.",
@@ -188,7 +188,7 @@ const experiences = [
         company_name: "YA.PRACTICUM",
         icon: practicum,
         iconBg: "#E6DEDD",
-        date: "Aug 2020 - Dec 2020",
+        date: "Dec 2022 - Jun 2023",
         points: [
             "Web messenger project.",
             "Working with Canvas API.",
@@ -231,37 +231,45 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Jungle Danger",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A web application with a 2D platform game, in addition to the game itself, implemented using the Canvas API, a whole structure was created with a personal user profile, a full-fledged forum, a leaderboard, data to which is transferred based on the results of the game.",
         tags: [
+            {
+                name: "TypeScript",
+                color: "orange-text-gradient",
+            },
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "canvas",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "styled components",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: jungle,
+        source_code_link: "https://github.com/24-team-09/arcade-2d-game/tree/main",
     },
     {
-        name: "Job IT",
+        name: "Messenger",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A functional messenger based on pure JavaScript with a full transition to TypeScript in the process of development. Third-party frameworks were not used in the project. The work additionally used the Handlebars template engine and linters to ensure the cleanliness of the code.",
         tags: [
             {
-                name: "react",
+                name: "JavaScript",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "TypeScript",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "handlebars",
                 color: "green-text-gradient",
             },
             {
@@ -269,29 +277,33 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: messenger,
+        source_code_link: "https://github.com/alheym/middle.messenger.praktikum.yandex",
     },
     {
-        name: "Trip Guide",
+        name: "Portfolio",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "The old version of the portfolio site. The site is implemented in pure JavaScript using the Canvas API to implement interactive animations. There is also a feedback form on the site, for which its own service for sending letters is implemented.",
         tags: [
             {
-                name: "nextjs",
+                name: "JavaScript",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "canvas",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "php",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "scss",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: portfolio,
+        source_code_link: "https://github.com/alheym/portfolio",
     },
 ];
 
