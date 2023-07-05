@@ -10,11 +10,11 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
     docker,
+    styled,
+    webpack,
+    vue,
     tusur,
     udemy,
     practicum,
@@ -60,14 +60,6 @@ const services = [
 
 const technologies = [
     {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
         name: "JavaScript",
         icon: javascript,
     },
@@ -76,39 +68,47 @@ const technologies = [
         icon: typescript,
     },
     {
+        name: "HTML 5",
+        icon: html,
+    },
+    {
+        name: "CSS 3",
+        icon: css,
+    },
+    {
         name: "React JS",
         icon: reactjs,
+    },
+    {
+        name: "Vue JS",
+        icon: vue,
     },
     {
         name: "Redux Toolkit",
         icon: redux,
     },
     {
+        name: "Styled components ",
+        icon: styled,
+    },
+    {
         name: "Tailwind CSS",
         icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
     },
     {
         name: "Three JS",
         icon: threejs,
     },
     {
-        name: "git",
+        name: "Git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "Webpack",
+        icon: webpack,
     },
     {
-        name: "docker",
+        name: "Docker",
         icon: docker,
     },
 ];
@@ -180,7 +180,7 @@ const experiences = [
             "Basics of the VueJS framework.",
             "The basics of End to End testing using Cypress and the basics of testing on Jest.",
             "Learning asynchronous JavaScript, the Event Loop, AJAX, Promises, and Async/Await.",
-            
+
         ],
     },
     {
